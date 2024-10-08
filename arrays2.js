@@ -11,8 +11,10 @@ console.log(isArrayLengthEven([1, 2, 3]));
 console.log(isArrayLengthEven([1, 2, 3, 4]));
 
 function addLailaToArray(instructors) {
-  instructors.push("Laila");
-  return instructors;
+  const Laila = [];
+  Laila.push(instructors.slice(0, instructors.length));
+  Laila.push("Laila");
+  return Laila;
 }
 console.log(addLailaToArray(["Mshary", "Hasan"]));
 
